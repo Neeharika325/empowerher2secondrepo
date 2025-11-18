@@ -12,6 +12,7 @@
             display: flex;
             justify-content: center;
             margin-top: 40px;
+            
         }
         h1{
             color:blue;
@@ -22,9 +23,10 @@
             margin:auto;
         }
         #button{
-            margin-top:20px;
             display:grid;
+            margin-top:20px;
             grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
             gap:8px;
         }
         button{
@@ -36,15 +38,18 @@
         }
         .num{
             background-color: white;
-            border:1px solid;
+            border:1px white;
+            width:40px;
         }
         .op{
             background-color:black;
             color:white;
+            width:40px;
         }
         .clear{
             background-color: red;
             color:white;
+            width:40px;
         }
         .equal{
             background-color: black;
@@ -55,23 +60,27 @@
 <body>
     
     <div id="calc">
-        <h1>Masai Calculator</h1>
+        <h1 style="color:blue; text-align: center;">Masai Calculator</h1>
         
         <div id ="buttons">
             <button class="num">1</button>
             <button class="num">2</button>
             <button class="num">3</button>
-            <button class="num">+</button>
+            <button class="op">+</button>
+           <br><br>
             <button class="num">4</button>
             <button class="num">5</button>
             <button class="num">6</button>
-            <button class="num">-</button>
+            <button class="op">-</button>
+            <br><br>
             <button class="num">7</button>
             <button class="num">8</button>
             <button class="num">9</button>
-            <button class="num">x</button>
+            <button class="op">x</button>
+            <br><br>
             <button class="clear">C</button>
-            <button class="equal">=</button>
+            <button class="num">0</button>
+            <button class="op">=</button>
             <button class="op">/</button>
             
             
