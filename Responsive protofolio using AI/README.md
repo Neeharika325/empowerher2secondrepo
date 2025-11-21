@@ -1,5 +1,5 @@
-                              <RESPONSIVE PERSONAL PROTOFOLIO PAGE (USING AI TOOLS)>
-                                      I have done my project "Replit AI"
+                              <h2>RESPONSIVE PERSONAL PROTOFOLIO PAGE (USING AI TOOLS)<h2>
+                                     <h3> I have done my project "Replit AI"<h3>
 
 # Responsive Personal Portfolio (HTML + CSS Version)
 
