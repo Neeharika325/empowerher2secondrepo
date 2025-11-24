@@ -1,10 +1,12 @@
 const people =[
+  {
     name:"Alice",
     address:{
     city:"New York",
     street:{name:"Broadway",number:123}
     }
-  }
+  },
+  
   {
     name:"Bob",
     address:{
@@ -12,10 +14,7 @@ const people =[
       street:{name:"Sunset Boulevard",number:456}
     }
   } 
-  {  
-
-
-  ];
+];
   const result=people.map(({name,address:{city,street:{name:streetname} } }) =>
               '${name} lives in  ${city} on $ {streetName}'
 );
