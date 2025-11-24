@@ -16,7 +16,7 @@ const people =[
   } 
 ];
   const result=people.map(({name,address:{city,street:{name:streetname} } }) =>
-              '${name} lives in  ${city} on $ {streetName}'
+              `${name} lives in  ${city} on $ {streetName}`
 );
   console.log(result);
   
