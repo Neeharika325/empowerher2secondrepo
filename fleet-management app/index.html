@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to login page</h1>
+    <button id="btn">Go to Dashboard Page</button>
+</body>
+<div>
+<input type="text" id="email" placeholder="Email Id"><br>
+<input type="text" id="password" placeholder="Password"><br>
+<button>Login</button>
+
+
+<script>
+    document.getElementById("btn").addEventListener("click", () => {
+        window.location.href=`admin.html`
+    });
+</script>
+
+</html>
