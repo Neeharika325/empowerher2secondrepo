@@ -1,16 +1,7 @@
- <html>
- <body>
-    <ul id="item-list">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 2</li>
-    </ul>
-    <button id="add btn">Add Item</button>
+ const list=document.querySelector("#item-list");
+ const button=document.getElementById("add-btn");
     
-        const list=document.querySelector("#item-list");
-        const button=document.getElementById("add-btn");
-        <script>
-        button.addEventListener("click function () {
+        button.addEventListener("click" ,function () {
             const newLi=document.createElementById("li");
             newLi.textContent="New Item";
             const itemNumber=list.children.length + 1;
@@ -23,6 +14,4 @@
             list.appendChild(newLi);
 
         });
-    </script>
-</body>
-</html>
+    
