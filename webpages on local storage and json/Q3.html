@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial,sans-serif;
+            padding:20px;
+            margin-bottom:auto;
+        }
+        #taskInput, #searchInput {
+            width:100px;
+            padding: 10;
+            margin-bottom:10px;
+        }
+        button{
+            padding:8px,12px;
+            margin-left:5px;
+        }
+        ul{
+            list-style:none;
+            padding:0;
+        }
+        li{
+            padding: 10px;
+            margin: 5px,0;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+        }
+        .completed{
+            text-decoration: line-through;
+            color:gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enhanced Todo List</h2>
+    <input id="taskInput" type="text" placeholder="Enter task..."/>
+    <button onclick="addTask()">Add Task</button>
+    <input id="searchInput" type="text" placeholder="search tasks..." oninput="searchTasks()" />
+    <ul id="taskList"></ul>
+    <script src="Q3.js"></script>
+    
+</body>
+</html>
