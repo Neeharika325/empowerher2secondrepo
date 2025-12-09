@@ -10,7 +10,7 @@ import{
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAJKoHVGAFuHWH5OeZhBxAJ-7-oPbQbw0Y",
+  apiKey: "",
   authDomain: "book-management-app-1cac7.firebaseapp.com",
   databaseURL: "https://book-management-app-1cac7-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "book-management-app-1cac7",
