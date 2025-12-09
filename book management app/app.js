@@ -1,3 +1,12 @@
+
+
+if (!apiKey) {
+  console.log("API key is NOT loaded");
+} else {
+  console.log("API key loaded successfully");
+}
+const express =require(`express`);
+const app=express();
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 
 "https://book-management-app-1cac7-default-rtdb.asia-southeast1.firebasedatabase.app/firebase.js";
@@ -9,14 +18,15 @@ import{
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "process.env.API_KEY",
+const firebaseconfig{
+    apiKey=process.env.MY_API_KEY;
   authDomain: "book-management-app-1cac7.firebaseapp.com",
   databaseURL: "https://book-management-app-1cac7-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "book-management-app-1cac7",
   storageBucket: "book-management-app-1cac7.firebasestorage.app",
   messagingSenderId: "825177843122",
-  appId: "1:825177843122:web:d4663a21239e45865df0ab"
+  appId: "1:825177843122:web:d4663a21239e45865df0ab",
+
 };
 
 // Initialize Firebase
