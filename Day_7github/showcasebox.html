@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    #container {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        min-width: 200px;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    #sidebar select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+        width: 100%;
+    }
+
+    .phone_picture{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+    }
+
+    .phone_picture img {
+        width: 60%;
+        border-radius: 10px;
+    }
+    h3,h4,h5{
+        margin: 0;
+    }
+
+    /* Price Styling */
+    .details > h5 {
+        color: red;
+        text-decoration: line-through;
+        background-color: rgb(247, 199, 199);
+        width: fit-content;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    /* Buttons */
+    .phone_picture> div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .phone_picture> div:nth-child(3) button {
+        border: none;
+        width: 45%;
+        height: 35px;
+        border-radius: 10px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+     .logo_picture> div:nth-child(3) button:first-child {
+        background-color: lightgray;
+    }
+
+    .logo_picture> div:nth-child(3) button:last-child {
+        background-color: lightblue;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img width=50%; src="https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/w/x/h/-original-imahfa7xspmxemvj.jpeg" 
+        alt="phone picture">
+        <div class="Details">
+            <h4>SAMSUNG Galaxy Watch6 LTE</h4>
+            <h3>Graphite strap, 44mm</h3><br>
+         <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="logo picture">
+         <h4>Original Price Rs.18,999</h4>
+         <h4>Discounted Price Rs.41,999 <br> 54% off</h4>
+        </div>
+    </div>
+    <div>
+                <button>Add To Cart</button>
+                <button>Buy Now</button>
+            </div>
+    
+</body>
+</html>

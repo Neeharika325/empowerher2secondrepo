@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:Arial,sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            
+        }
+        h1{
+            color:blue;
+            text-align: justify;
+        }
+        #calc{
+            width:200px;
+            margin:auto;
+        }
+        #button{
+            display:grid;
+            margin-top:20px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap:8px;
+        }
+        button{
+            padding:10px;
+            font-size:18px;
+            border:none;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+        .num{
+            background-color: white;
+            border:1px white;
+            width:40px;
+        }
+        .op{
+            background-color:black;
+            color:white;
+            width:40px;
+        }
+        .clear{
+            background-color: red;
+            color:white;
+            width:40px;
+        }
+        .equal{
+            background-color: black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="calc">
+        <h1 style="color:blue; text-align: center;">Masai Calculator</h1>
+        
+        <div id ="buttons">
+            <button class="num">1</button>
+            <button class="num">2</button>
+            <button class="num">3</button>
+            <button class="op">+</button>
+           <br><br>
+            <button class="num">4</button>
+            <button class="num">5</button>
+            <button class="num">6</button>
+            <button class="op">-</button>
+            <br><br>
+            <button class="num">7</button>
+            <button class="num">8</button>
+            <button class="num">9</button>
+            <button class="op">x</button>
+            <br><br>
+            <button class="clear">C</button>
+            <button class="num">0</button>
+            <button class="op">=</button>
+            <button class="op">/</button>
+            
+            
+
+            
+            
+
+        </div>
+    </div>
+</body>
+</html>
