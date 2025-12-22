@@ -1,0 +1,111 @@
+ 
+ <!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial,sans-serif;
+        }
+        body{
+            background-color: #f5f5f5;
+            padding: 30px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+            color:#333;
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows:repeat(2 150px);
+            width: 600px;
+            margin: 20px auto;
+            gap: 10px;
+        }
+        .card{
+            background: white;
+            border: 1px solid #ddd;
+             border-radius: 10px;
+             padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+        }
+        .card img{
+            width:200px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .card h3{
+            font-size: 18px;
+            margin-bottom: 5px;
+            color:#222;
+        }
+        .card p{
+            font-size: 14px;
+            color:grey;
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg">
+            <h3>Vijay Shekhar Sharma</h3>
+            <p>Founder & CEO -Paytm</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Rectangle_427_637d69bb57.png">
+            <h3>Kunal Shah</h3>
+            <p>Founder - CRED</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/amrish_rau_pine_labs_144e5e587c.jpg">
+            <h3>Amrish Rau</h3>
+            <p>CEO - Pine Labs</p>
+            </div>
+        
+            <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Sampad_swain_Instamojo_f12bf6341e.jpg">
+            <h3>Sampad Swain</h3>
+            <p>CO-founder & CEO - instamojo</p>
+            </div>
+         <---2nd row --->
+            <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg">
+            <h3>Ankush Sachdeva</h3>
+            <p>CO-founder - ShareChat</p>
+            </div>
+
+            <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg">
+            <h3>Bhanu Pratap Singh </h3>
+            <p>CO-founder & CEO  - ShareChat</p>
+            </div>
+
+            <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/farid_ahsan_sharechat_1251f28141.png">
+            <h3>Farid Ahsan</h3>
+            <p>Founder & COO  - ShareChat</p>
+            </div>
+
+            <div class="card">
+            <img src="https://cdn.masaischool.com/masai-website/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg">
+            <h3>Amit Kumar Agarwal</h3>
+            <p>Founder & CEO  - NoBroker</p>
+            </div>
+
+
+       
+    </div>
+</body>
+</html>
