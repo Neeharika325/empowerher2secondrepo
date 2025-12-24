@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "video-player-useref",
-=======
-  "name": "firstreactapp",
->>>>>>> c432ad79daeaa7711ffb472fc0057c4091cd1f5d
+  "name": "react-routing-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
