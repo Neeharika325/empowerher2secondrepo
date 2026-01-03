@@ -33,11 +33,22 @@ import './App.css'
 // }
 
 // export default App
-
+import React from 'react';
+import{BrowserRouter,Routes,Routes} from "react-router-dom";
+import Login from "./Components/Login";
+import AdminDashboard from "./Components/AdminDashboard";
 
 
 
 function App(){
+    return(
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Login/>}/>
+            <Route path="/admin" element={<AdminDashboard/>}/>
+        </Routes>
+        </BrowserRouter>
+    );
 
 }
 
