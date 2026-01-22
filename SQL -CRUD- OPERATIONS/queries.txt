@@ -1,0 +1,31 @@
+CREATE TABLE studentss (
+    id SERIAL PRIMARY KEY,
+    name TEXT,
+    email TEXT,
+    age INTEGER,
+    course TEXT,
+    created_at TIMESTAMP DEFAULT NOW()
+);
+
+INSERT INTO students (name, email, age, course)
+VALUES
+('Neeharika', 'neeha@gmail.com', 22, 'Computer Science'),
+('Divya', 'divya@gmail.com', 19, 'Information Technology'),
+('Rohan Verma', 'rohan.rao@gmail.com', 24, 'Computer Science'),
+('Sriya', 'sriya@gmail.com', 21, 'Electronics'),
+('Karan Singh', 'karan@gmail.com', 18, 'Mechanical Engineering');
+
+SELECT * FROM students;
+SELECT * FROM students WHERE age>20;
+SELECT * FROM students WHERE course ='Computer Science';
+
+
+UPDATE students SET age=23 WHERE id=1;
+DELETE FROM students WHERE id=5;
+
+DELETE FROM students WHERE age<20;
+
+
+OUTPUT LINK:
+
+C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2026-01-22 155801.png
