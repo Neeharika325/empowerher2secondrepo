@@ -1,0 +1,64 @@
+id SERIAL PK
+name (TEXT)
+email (TEXT)
+age (INTEGER)
+course (TEXT)
+created_at (TIMESTAMP)
+
+SELECT COUNT(*) AS total_students FROM students;
+
+OUTPUT:24
+
+SELECT AVG(age) AS average_age FROM students;
+
+OUTPUT:22.3750000000000000
+
+SELECT
+     MIN(age) AS minimum_age,
+     MAX(age) AS maximum_age
+FROM students;   
+
+OUTPUT: minimum_age  maximum_age
+         21            24
+
+SELECT course, COUNT(*) AS student_count FROM students GROUP BY course;
+         
+         COURSE           student_count
+OUTPUT: computer science    16
+        Electronics         8
+
+SELECT COUNT(*) AS students_above_20 FROM students WHERE age>20;
+
+OUTPUT:  students_above_20
+            24
+
+SELECT course, COUNT(*) AS student_count FROM students GROUP BY course
+
+          COURSE           student_count
+OUTPUT: computer science    16
+        Electronics         8
+
+
+SELECT course, COUNT(*) AS student_count FROM students GROUP BY course HAVING COUNT(*)> 1;
+
+        COURSE           student_count
+OUTPUT: computer science    16
+        Electronics         8
+
+SELECT FROM students ORDER BY created_at DESC LIMIT 3 ;
+
+OUTPUT:"C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2026-01-24 200158.png"
+
+SELECT * FROM students WHERE course = 'Computer Science' ORDER BY age DESC;
+
+
+OUTPUT:"C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2026-01-24 200412.png"
+
+
+
+
+
+    
+ 
+
+
