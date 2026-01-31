@@ -1,4 +1,5 @@
 const supabase=require('../config/supabase');
+const {validateCustomer}=require('../validations/customer.validation');
 
 exports.registerCustomer=async(req ,res)=>{
     const error=validateCustomer(req.body);
